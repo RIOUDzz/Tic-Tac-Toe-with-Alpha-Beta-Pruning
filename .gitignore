@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.env
+game_scores.db
+static/
+!static/index.html
+!static/style.css
+!static/script.js
+.gemini/
+brain/
