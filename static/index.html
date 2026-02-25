@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Tic-Tac-Toe | Alpha-Beta Pruning</title>
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="background-circles">
+        <div class="circle circle-1"></div>
+        <div class="circle circle-2"></div>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1>Tic-Tac-Toe</h1>
+            <p class="subtitle">Alpha-Beta Pruning AI Agent</p>
+        </header>
+
+        <div class="game-status" id="status">Your Turn (O)</div>
+
+        <div class="score-board">
+            <div class="score-item">
+                <span class="score-label">Wins</span>
+                <span class="score-value" id="wins">0</span>
+            </div>
+            <div class="score-item">
+                <span class="score-label">Losses</span>
+                <span class="score-value" id="losses">0</span>
+            </div>
+            <div class="score-item">
+                <span class="score-label">Draws</span>
+                <span class="score-value" id="draws">0</span>
+            </div>
+        </div>
+
+        <div class="selectors">
+
+            <div class="selector-group">
+                <span class="label">Opponent:</span>
+                <div class="btn-group" id="player-mode">
+                    <button class="mode-btn active" data-pmode="ai">AI</button>
+                    <button class="mode-btn" data-pmode="pvp">2 Players</button>
+                </div>
+            </div>
+
+            <div class="selector-group" id="difficulty-group">
+                <span class="label">Level:</span>
+                <div class="btn-group" id="difficulty">
+                    <button class="mode-btn active" data-mode="impossible">Impossible</button>
+                    <button class="mode-btn" data-mode="medium">Medium</button>
+                    <button class="mode-btn" data-mode="easy">Easy</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="board" id="board">
+
+
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+        </div>
+
+        <div class="controls">
+            <button id="reset-btn">Restart Game</button>
+        </div>
+
+        <footer>
+            <p>AI Fundamentals | TP1</p>
+        </footer>
+    </div>
+
+    <script src="static/script.js"></script>
+</body>
+
+</html>
